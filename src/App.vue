@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <top-nav></top-nav>
+    <b-container fluid>
+      <b-row>
+          <left-nav></left-nav>
+        <b-col md="10" tag="main">
+          <router-view></router-view>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import TopNav from "./components/Core/TopNav";
+import LeftNav from "./components/Core/LeftNav";
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  components: {LeftNav, TopNav},
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
