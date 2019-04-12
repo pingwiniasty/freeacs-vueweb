@@ -2,10 +2,9 @@
     <b-col md="2" tag="nav" class="sidebar" >
         <div class="sidebar-sticky bg-light">
             <b-nav vertical >
-                <b-nav-item active>Active</b-nav-item>
-                <b-nav-item>Link</b-nav-item>
-                <b-nav-item>Another Link</b-nav-item>
-                <b-nav-item disabled>Disabled</b-nav-item>
+                <b-nav-item to="/">Home</b-nav-item>
+                <b-nav-item to="units">Units</b-nav-item>
+                <b-nav-item to="about">About</b-nav-item>
             </b-nav>
         </div>
     </b-col>

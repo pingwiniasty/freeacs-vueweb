@@ -4,7 +4,7 @@
     <b-container fluid>
       <b-row>
           <left-nav></left-nav>
-        <b-col md="10" tag="main">
+        <b-col md="10" tag="main" class="ml-auto">
           <router-view></router-view>
         </b-col>
       </b-row>
